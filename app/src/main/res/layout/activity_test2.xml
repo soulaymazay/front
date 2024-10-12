@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainlistedes_chauffeurs">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/infotext"
+                android:layout_width="match_parent"
+                android:layout_height="271dp"
+                android:text="Il suffit d'un seul clic sur votre téléphone pour commander une course, trouver un taxi à proximité et profitez d'un voyage à bas prix vers votre destination.
+
+E-Wassalni est une application mobile qui offre un service flexible, rapide, et qui correspond parfaitement aux exigences des tunisiens.
+
+Pourquoi choisir E-Wassalni ?
+
+- Bénéficiez d'un trajet confortable et économique.
+
+- Temps de réponse rapide et temps d'attente réduit, 24h/24 et 7j/7.
+
+- Voir le prix réel du compteur et le prix proposée par l'application.
+
+- E-Wassalni est un simulateur de prix.
+
+Comment prendre E-Wassalni ?
+
+1. Ouvrez l'application et définissez votre destination.
+
+2. Demandez à un chauffeur de venir vous chercher.
+
+3. Profitez du trajet jusqu'à votre destination.
+
+E-Wassalni est une application mobile qui met en relation un client avec un taxi, tout en offrant un service flexible, rapide et surtout moins cher." />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

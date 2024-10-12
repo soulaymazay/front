@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">transport en ligne</string>
+    <string name="compte">
+        <u>créer un compte</u>
+    </string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_api_key">AIzaSyCq_hap5AaVWAT7Jcr3bh3vN0DcYcTXrTE</string>
+    <string name="WelcomeText">"Salut "</string>
+
+
+</resources>

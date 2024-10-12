@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-55dp"
+    android:background="@drawable/inter1"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="875dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-33dp"
+        tools:layout_editor_absoluteY="-44dp">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+
+            android:padding="10dp"
+            android:src="@drawable/logo3"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="317dp"
+            android:layout_height="719dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="110dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_1"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/textin33"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:text="votre moyen du transport"
+                android:textColor="#2D2D2D"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RadioButton
+                    android:id="@+id/moto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="moto" />
+
+                <RadioButton
+                    android:id="@+id/voiture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="voiture" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/numPermis"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@drawable/marque"
+                android:drawablePadding="80dp"
+                android:hint="Marque" />
+
+            <EditText
+                android:id="@+id/nomChauffeur"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/modele"
+                android:drawablePadding="80dp"
+                android:hint=" Modele" />
+
+            <EditText
+                android:id="@+id/emailChauffeur"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/annee"
+                android:drawablePadding="80dp"
+                android:hint=" année" />
+
+
+            <EditText
+                android:id="@+id/couleur"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/couleur"
+                android:drawablePadding="80dp"
+                android:hint="couleur" />
+
+            <Button
+                android:id="@+id/buttonChoose"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/button_login1"
+                android:text="choisir une photo de votre moyen de transport"
+
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/photo" />
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="183dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/button_login1"
+                android:text="s'inscrir"
+                android:textColor="@color/white"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

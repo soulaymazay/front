@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/inter1"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="426dp"
+        android:layout_height="737dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="80dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="22dp"
+            android:padding="10dp"
+            android:src="@drawable/logo3"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="325dp"
+            android:layout_height="465dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="140dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background_1"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/T1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/per"
+                android:drawablePadding="80dp"
+                android:hint=" nom" />
+
+            <EditText
+                android:id="@+id/T2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/eml"
+                android:drawablePadding="80dp"
+                android:hint=" E-mail" />
+
+            <EditText
+                android:id="@+id/mp1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/mot"
+                android:drawablePadding="50dp"
+                android:hint=" mot de passe"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/mp2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/mot2"
+                android:drawablePadding="50dp"
+                android:hint="vérifier mot de passe"
+                android:inputType="textPassword" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/buttonChoose"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button_login1"
+                android:text="choisir une photo de votre profil"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/photo" />
+
+
+            <Button
+                android:id="@+id/ConnectButton"
+                android:layout_width="181dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/button_login1"
+                android:text="s'inscrire"
+
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

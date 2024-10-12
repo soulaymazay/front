@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TransportEnLigne"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Main_infoapp"
+            android:exported="false" />
+        <activity
+            android:name=".Main_profilchauffeur"
+            android:exported="false" />
+        <activity
+            android:name=".MainProfilclien"
+            android:exported="false" />
+        <activity
+            android:name=".ChauffeurDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Main_avis"
+            android:exported="false" />
+        <activity
+            android:name=".test2"
+            android:exported="false" />
+        <activity
+            android:name=".test"
+            android:exported="false" />
+        <activity
+            android:name=".Mainlistedes_chauffeurs"
+            android:exported="false" />
+        <activity
+            android:name=".ClientDashboard"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".MainActivitydashbord_client"
+            android:exported="false" />
+        <activity
+            android:name=".MoyenCreate"
+            android:exported="false" />
+        <activity
+            android:name=".ChauffeurSignup"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".ClientSignup"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_accueil"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity_listdesmoyens"
+            android:exported="false" />
+        <activity
+            android:name=".Introduction"
+            android:exported="false" />
+        <activity
+            android:name=".ChauffeurListMoyenEdit"
+            android:exported="false" />
+        <activity
+            android:name=".ChauffeurListView"
+            android:exported="false" />
+        <activity
+            android:name=".ChauffeurListMoyenView"
+            android:exported="false" />
+        <activity
+            android:name=".ClientChauffeurPosition"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminClientList"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminChauffeurList"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminChauffeurListMoyenEdit"
+            android:exported="false" />
+        <activity
+            android:name=".ChauffeurListMoyenViewGuest"
+            android:exported="false" />
+        <activity
+            android:name=".AvisList"
+            android:exported="false" />
+        <activity
+            android:name=".Startup"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".RunServiceOnBoot"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".LocalNotificationManager" />
+
+        <service android:name=".WebsocketConnector" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCq_hap5AaVWAT7Jcr3bh3vN0DcYcTXrTE" />
+    </application>
+
+</manifest>

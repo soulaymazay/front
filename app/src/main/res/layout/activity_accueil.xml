@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDA400"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="4"
+        android:gravity="center_horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-10dp"
+            tools:layout_editor_absoluteY="137dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="113dp"
+                android:layout_marginTop="30dp"
+                android:padding="10dp"
+                android:src="@drawable/logo3"
+                tools:elevation="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-10dp"
+            tools:layout_editor_absoluteY="137dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_login1"
+                tools:elevation="5dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="61dp"
+                tools:layout_editor_absoluteY="230dp">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="vous cherchez un moyen de transport:"
+                    android:textColor="#DEDEDE"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="0dp"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="55dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_login"
+                    android:text="Trouvez un moyen de transport"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text1" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="296dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginBottom="2dp"
+                tools:ignore="MissingConstraints">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-10dp"
+            tools:layout_editor_absoluteY="137dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_login1"
+                android:elevation="5dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="61dp"
+                tools:layout_editor_absoluteY="230dp">
+
+                <TextView
+                    android:id="@+id/textin32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10sp"
+
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="vous possedez un compte:"
+                    android:textColor="#DEDEDE"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="145dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/button_login"
+                    android:text="connecter"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_login1"
+                android:elevation="5dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="141dp"
+                tools:layout_editor_absoluteY="652dp">
+
+
+                <TextView
+                    android:id="@+id/textin33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="50dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="vous vouler créer un compte:"
+                    android:textColor="#DEDEDE"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="101dp"
+                    android:layout_height="88dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="19dp"
+                    android:layout_marginBottom="1dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <RadioButton
+                        android:id="@+id/radio3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Client"
+                        android:textColor="#DEDEDE"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="10dp"
+                        tools:layout_editor_absoluteY="117dp" />
+                    <RadioButton
+                        android:id="@+id/radio4"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Chauffeur"
+                        android:textColor="#DEDEDE"
+                        android:textStyle="bold"
+                        tools:layout_editor_absoluteX="10dp"
+                        tools:layout_editor_absoluteY="117dp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textin34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:text="en tant que:"
+                    android:textColor="#DEDEDE"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/radiogroup1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textin33"
+                    tools:ignore="DuplicateIds,MissingConstraints" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="145dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/button_login"
+                    android:text="inscription"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.8"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

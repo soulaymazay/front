@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-55dp"
+    android:background="@drawable/inter1"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="413dp"
+        android:layout_height="875dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-3dp">
+
+        <ImageView
+            android:layout_width="574dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="22dp"
+            android:padding="10dp"
+            android:src="@drawable/logo3"
+            tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:layout_width="413dp"
+            android:layout_height="528dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="75dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/gererclient"
+                android:layout_width="373dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shadw"
+                android:drawableRight="@drawable/fleche1"
+                android:drawablePadding="80dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Gerer Clients"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinfochauff" />
+
+            <Button
+                android:id="@+id/gererchauffeur"
+                android:layout_width="373dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shadw"
+                android:drawableRight="@drawable/fleche1"
+                android:drawablePadding="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Gerer Chauffeurs"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinfomt" />
+
+            <Button
+                android:id="@+id/gererpendingchauffeur"
+                android:layout_width="373dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shadw"
+                android:drawableRight="@drawable/fleche1"
+                android:drawablePadding="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Gerer Chauffeurs en attente"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinfomt" />
+
+            <Button
+                android:id="@+id/gererpendingmoyens"
+                android:layout_width="373dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shadw"
+                android:drawableRight="@drawable/fleche1"
+                android:drawablePadding="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Gerer moyens en attente"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinfomt" />
+
+            <Button
+                android:id="@+id/gereracceptedmoyens"
+                android:layout_width="375dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shadw"
+                android:drawableRight="@drawable/fleche1"
+                android:drawablePadding="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Gerer moyens accepté"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinfomt" />
+
+            <Button
+                android:id="@+id/avisadmin"
+                android:layout_width="377dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shadw"
+                android:drawableRight="@drawable/fleche1"
+                android:drawablePadding="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Voir Courses et Avis"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinfomt" />
+
+            <Button
+                android:id="@+id/logoutadmin"
+                android:layout_width="380dp"
+                android:layout_height="63dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shadw"
+                android:drawableRight="@drawable/fleche1"
+                android:drawablePadding="8dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Deconnecter"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textinfomt" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

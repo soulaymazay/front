@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main_infoapp">
+    <LinearLayout
+        android:id="@+id/layoutTooBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@android:color/holo_orange_light"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagemenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/fleshavis"
+        app:tint="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/imageapp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <LinearLayout
+        android:layout_width="417dp"
+        android:layout_height="770dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/imageapp"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="327dp"
+            android:layout_height="142dp"
+            android:layout_marginLeft="10dp"
+            android:text="Il suffit d'un seul clic sur votre téléphone pour commander une course, trouver un moyen à proximité et profitez d'un voyage à bas prix vers votre destination.
+
+
+TADELI est une application mobile qui offre un service flexible, rapide, et qui correspond parfaitement aux exigences des tunisiens."
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="Pourquoi choisir TADELI ?"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginLeft="10dp"
+            android:text="- Bénéficiez d'un trajet confortable et économique."
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="376dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="- Temps de réponse rapide et temps d'attente réduit, 24h/24 et 7j/7."
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="- Voir le prix réel du compteur et le prix proposée par l'application"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="- TADELI est un simulateur de prix."
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="Comment prendre TADELI ?"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text="1. Ouvrez l'application et définissez votre destination"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2. Demandez à un chauffeur de venir vous chercher "
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text="3. Profitez du trajet jusqu'à votre destination"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="345dp"
+            android:layout_height="142dp"
+            android:layout_marginLeft="10dp"
+            android:text="TADELI est une application mobile qui met en relation un client avec un taxi, tout en offrant un service flexible, rapide et surtout moins cher."
+
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
